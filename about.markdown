@@ -4,15 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hello, I'm David, a high school student and aspiring engineer.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+This website showcases a few websites I built over the last three years of high school. Projects range from basic static sites/blogs to dynamic sites involving databases. Feel free to visit [my github account](https://github.com/trdavidt) for more.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Technology I've worked with: 
 
+- Languages: HTML, CSS, JS, PHP, Java 
 
-[jekyll-organization]: https://github.com/jekyll
+- Frameworks/libraries: Bootstrap, JQuery, Firebase
