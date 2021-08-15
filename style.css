@@ -75,10 +75,11 @@ p > a:hover::after {
   padding: 2% 5%;
   flex-wrap: wrap;
   background-color: var(--navy);
-  position: sticky;
   z-index: 50;
+  position: sticky;
   top: 0;
-  left: 0;  
+  left: 0; 
+  transition: background-color .5s ease;
 }
 
 .nav-link {
@@ -119,6 +120,8 @@ p > a:hover::after {
 
 #toggle-btn {
   display: none;
+  color: white;
+  margin: 15px;
 }
 
 .page-container {
@@ -340,15 +343,29 @@ p > a:hover::after {
     flex-direction: column;
     width: 100%;
   }
+  .section-title {
+    margin-right: auto;
+  }
   .page-container > div {
     flex-basis: auto;
     max-width: 100vw;
-  }
-  .nav-container {
-    flex-direction: column;
+  } 
+  .nav-link {
+    position: absolute;
+    opacity: 0;
   }
   #nav-logo {
-    margin-right: 0;
+    position: static !important;
+    opacity: 1 !important;
+  }
+  #toggle-btn {
+    display: block;
+    z-index: 50;  
+    flex-grow: 1; 
+    text-align: right; 
+  }
+  #toggle-btn i {
+    width: 100%;
   }
   .page-block {
     padding: 0;
@@ -362,5 +379,15 @@ p > a:hover::after {
   #photo {
     width: 200px;
     height: 200px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nav-container {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  #nav-logo {
+    margin-right: 15px;
   }
 }
