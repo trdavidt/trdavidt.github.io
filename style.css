@@ -72,7 +72,7 @@ p > a:hover::after {
 .nav-container {
   display: flex;
   justify-content: flex-end;
-  padding: 2% 5%;
+  padding: 1% 5%;
   flex-wrap: wrap;
   background-color: var(--navy);
   z-index: 50;
@@ -188,7 +188,7 @@ p > a:hover::after {
   box-sizing: border-box;
   flex-basis: 40%;
   flex-grow: 1;
-  transition: transform .5s ease, color .5s ease, background-color .5s ease;
+  transition: transform .5s ease, color .5s ease, opacity .5s ease;
   margin: 1em;
 }
 
@@ -199,8 +199,7 @@ p > a:hover::after {
 
 .project-card:hover {
   transform: translateY(-2px);
-  color: var(--navy);
-  background-color: whitesmoke;
+  opacity: .8;
 }
 
 .project-card img {
@@ -350,7 +349,7 @@ p > a:hover::after {
     flex-basis: auto;
     max-width: 100vw;
   } 
-  .nav-link {
+  .nav-link:not(.project-link) {
     position: absolute;
     opacity: 0;
   }
@@ -372,6 +371,9 @@ p > a:hover::after {
   }
   .footer-link {
     font-size: 18px !important;
+  }
+  .skill.gray, .skill.teal {
+    margin: .5em;
   }
 }
 

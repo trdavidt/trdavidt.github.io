@@ -7,12 +7,12 @@ navOpened = false;
 
 onScrollNav = function() {  
   if (window.pageYOffset > navHeight) {
-    navContainer.style.transition = "padding .5s ease";
-    navContainer.style.padding = "1% 5%";    
-    navContainer.style.backgroundColor = "rgba(14, 41, 60, .9)";
+    // navContainer.style.transition = "padding .5s ease";
+    // navContainer.style.padding = "1% 5%";    
+    navContainer.style.backgroundColor = "rgba(14, 41, 60, .8)";
   }
   else {
-    navContainer.style.padding = "2% 5%";
+    // navContainer.style.padding = "2% 5%";
     navContainer.style.opacity = "1";
     navContainer.style.backgroundColor = "rgb(14, 41, 60)";
   }  
