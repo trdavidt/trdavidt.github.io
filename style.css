@@ -199,7 +199,7 @@ p > a:hover::after {
 
 .project-card:hover {
   transform: translateY(-2px);
-  opacity: .8;
+  opacity: .9;
 }
 
 .project-card img {
