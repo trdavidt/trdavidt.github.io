@@ -1,5 +1,5 @@
 ---
 layout: "skill"
-name: "Bootstrap"
+name: "GraphQL"
 type: "Framework/Tool"
 ---

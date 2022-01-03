@@ -5,18 +5,18 @@ navHeight = document.querySelector(".nav-container").clientHeight;
 navToggle = document.getElementById("toggle-btn");
 navOpened = false;
 
-onScrollNav = function() {  
-  if (window.pageYOffset > navHeight) {
-    // navContainer.style.transition = "padding .5s ease";
-    // navContainer.style.padding = "1% 5%";    
-    navContainer.style.backgroundColor = "rgba(14, 41, 60, .8)";
-  }
-  else {
-    // navContainer.style.padding = "2% 5%";
-    navContainer.style.opacity = "1";
-    navContainer.style.backgroundColor = "rgb(14, 41, 60)";
-  }  
-}
+// onScrollNav = function() {  
+//   if (window.pageYOffset > navHeight) {
+//     // navContainer.style.transition = "padding .5s ease";
+//     // navContainer.style.padding = "1% 5%";    
+//     navContainer.style.backgroundColor = "rgba(14, 41, 60, .8)";
+//   }
+//   else {
+//     // navContainer.style.padding = "2% 5%";
+//     navContainer.style.opacity = "1";
+//     navContainer.style.backgroundColor = "rgb(14, 41, 60)";
+//   }  
+// }
 
 onClickNav = function() {  
   if(!navOpened) {   
@@ -38,7 +38,7 @@ onClickNav = function() {
   navOpened = !navOpened
 }
 
-window.addEventListener("scroll", onScrollNav);
+// window.addEventListener("scroll", onScrollNav);
 navToggle.addEventListener("click", onClickNav)
 
 /* Scroll to anchor */
