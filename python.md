@@ -1,6 +1,6 @@
 ---
 layout: "skill"
-name: "CSS"
+name: "Python"
 type: "Language"
 order: 3
 ---
