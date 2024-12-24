@@ -1,7 +1,10 @@
 exclude:
   - .jekyll-cache
 
-collections: 
-  posts:
-    title: Posts
-    output: true
+# collections: 
+#   projects:
+#     title: Projects
+#     output: true
+#   skills: 
+#     title: skills
+#     output: true
