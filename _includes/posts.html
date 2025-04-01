@@ -1,0 +1,27 @@
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="post">
+    <a href="{{ post.url }}">
+      <span>
+      {% assign d = post.date | date: "%-d" %} 
+      {% assign m = post.date | date: "%B" %} 
+
+      {% case m %}
+        {% when 'April' or 'May' or 'June' or 'July' %}{{ m }}
+        {% when 'September' %}Sept.
+        {% else %}{{ post.date | date: "%b" }}.
+        {% endcase %}
+      {% case d %}
+        {% when '1' or '21' or '31' %}{{ d }}st
+        {% when '2' or '22' %}{{ d }}nd
+        {% when '3' or '23' %}{{ d }}rd
+        {% else %}{{ d }}th
+        {% endcase %}, 
+      {{ post.date | date: "%Y" }}
+      <!-- {{ post.date | date: "%-d %B %Y" }} -->
+      </span>
+      <h3>{{ post.title }}</h3>
+    </a>
+  </div>
+  {% endfor %}
+</div>

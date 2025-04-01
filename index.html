@@ -2,27 +2,34 @@
 layout: page
 ---
 
-<div class="page-container">
-  <div class="page-section">    
-    <div class="page-block" style="flex-grow: 1;">
-      <a id="about" class="anchor"></a>
-      <div class="section-title">
-        <h2>About Me</h2>
-        <div id="contact-links">
-          <a target="_blank" href="https://www.linkedin.com/in/d6tran" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a target="_blank" href="https://github.com/trdavidt" target="_blank"><i class="fab fa-github"></i></a>
-          <a target="_blank" href="mailto:d6tran@ucsd.edu" target="_blank"><i class="far fa-envelope"></i></a>       
-        </div> 
-      </div>
-      <p style="text-align: left;">
-        I'm a second-year computer science undergrad at UCSD interested in software engineering, data science, and computer networks. I'm currently an undergraduate web programmer at
-        <a href="https://caida.org">CAIDA</a> working on <a href="https://catalog.caida.org">catalog.caida.org</a> and other software for internet measurement research. 
-        I have experience with full-stack web development, and would like to get involved with software projects and other opportunities to broaden my skillset. I am looking for software engineering internships for summer 2022 :D
-      </p>      
-    </div>    
-    <div class="page-block" style="flex-basis: 40%;">
-      <div id="photo"></div>
-    </div>
+<div class="page-row">
+  <div class="page-block">
+    <h1>About Me</h1>
+    <div id="contact-links">
+      <a class="code" href="mailto:d6tran@ucsd.edu">d6tran@ucsd.edu</a>       
+      <a class="code" href="https://github.com/trdavidt">GitHub</a>
+      <a class="code" href="https://www.linkedin.com/in/d6tran">LinkedIn</a>
+    </div> 
+    <p>
+      Hello there! I'm a BS/MS student in computer science at UCSD graduating in June '25, interested broadly in networking, operating systems, and ML systems.
+      I supported Windows driver development for cellular modems at <a href="https://www.qualcomm.com/snapdragon/products/5g-modems">Qualcomm</a>
+      and worked on security-oriented web services at <a href="https://pki-center.com/">CommScope</a>. Before that, I worked on 
+      <a href="https://catalog.caida.org">catalog.caida.org</a> and other software for Internet measurement research at <a href="https://caida.org">CAIDA</a>.
+      I also tutored a few times for a statistics course (CSE 103).
+    </p>      
+    <p>
+      I will be joining Meta in July as a Production Engineer in Menlo Park, CA.
+    </p>
   </div>
+  <div class="page-block-sm">
+    <div id="photo"></div>
+  </div>
+</div>
+
+<h1>Posts</h1>
+{% include posts.html %}
+
+
+
 </div>
 
